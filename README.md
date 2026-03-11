@@ -27,9 +27,53 @@
 | [event_checklist.py](tools/market/event_checklist.py) | 活动 Checklist |
 | [competitor_tracker.py](tools/market/competitor_tracker.py) | 竞品活动追踪 |
 
+### 📖 客户案例工具（案例制作必备）
+
+| 工具 | 说明 |
+|------|------|
+| [customer_info.py](tools/case/customer_info.py) | 客户信息采集表 |
+| [interview_questions.py](tools/case/interview_questions.py) | 采访提纲生成器 |
+| [case_template.py](tools/case/case_template.py) | 案例模板库 |
+| [data_viz.py](tools/case/data_viz.py) | 数据可视化生成器 |
+| [compliance_check.py](tools/case/compliance_check.py) | 合规检查器 |
+| [multi_version.py](tools/case/multi_version.py) | 多版本生成器 |
+| [case_value.py](tools/case/case_value.py) | 案例价值评估器 |
+| [tracking.py](tools/case/tracking.py) | 传播效果追踪器 |
+
 ---
 
 ## 🚀 快速开始
+
+### 客户案例工具
+
+```bash
+# 客户信息采集表
+python3 tools/case/customer_info.py -n "XX 公司"
+
+# 生成采访提纲
+python3 tools/case/interview_questions.py "XX 公司" -i 互联网
+
+# 查看案例模板
+python3 tools/case/case_template.py -t 标准版
+
+# 数据可视化
+python3 tools/case/data_viz.py
+
+# 合规检查
+python3 tools/case/compliance_check.py case.md -m
+
+# 多版本生成
+python3 tools/case/multi_version.py case.md -v 全部 -o output/
+
+# 案例价值评估
+python3 tools/case/case_value.py -i
+
+# 传播效果追踪
+python3 tools/case/tracking.py add "XX 公司案例" -c "XX 公司"
+python3 tools/case/tracking.py channel "XX 公司案例" 公众号 -u https://xxx
+python3 tools/case/tracking.py update "XX 公司案例" 公众号 -v 10000 -l 500
+python3 tools/case/tracking.py report
+```
 
 ### 市场活动工具
 
